@@ -124,4 +124,8 @@ public class Tools {
     public static String dateStr2str(String date) {
         return date2str(str2date(date), "dd/MM/yyyy");
     }
+    
+    public static String date2Sql(String date){
+        return "CONVERT(DATETIME,'" + date + "', 102)";
+    }
 }
